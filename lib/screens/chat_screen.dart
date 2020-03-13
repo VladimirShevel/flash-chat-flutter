@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flash_chat/constants.dart';
 
 class ChatScreen extends StatefulWidget {
+  static const String id = 'chat';
   @override
   _ChatScreenState createState() => _ChatScreenState();
 }
@@ -16,6 +17,7 @@ class _ChatScreenState extends State<ChatScreen> {
           IconButton(
               icon: Icon(Icons.close),
               onPressed: () {
+                Navigator.pop(context);
                 //Implement logout functionality
               }),
         ],
